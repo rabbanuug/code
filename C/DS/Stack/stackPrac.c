@@ -1,4 +1,4 @@
-// stack and queue
+// stack
 
 /*
 - [x] initialize the top -1
@@ -7,8 +7,8 @@ func
 push if top < mx-1 else overflow
 pop if !isEmpty
 peek return current top
-
 */
+
 #include <stdio.h>
 
 #define MX 100

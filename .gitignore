@@ -35,6 +35,7 @@
 *.i*86
 *.x86_64
 *.hex
+*.in
 
 # Debug files
 *.dSYM/
@@ -65,3 +66,5 @@ dkms.conf
 
 # Compiled Static libraries
 *.lai
+outputf.in
+jspwTest.cpp
