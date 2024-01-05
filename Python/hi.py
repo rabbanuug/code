@@ -1,6 +1,6 @@
-import sys
-sys.stdout = open('Python/output.txt', 'w')
-sys.stdin = open('Python/input.txt', 'r')
+#import sys
+#sys.stdout = open('Python/output.txt', 'w')
+#sys.stdin = open('Python/input.txt', 'r')
 
 print("Hasdfi")
 a = 5
