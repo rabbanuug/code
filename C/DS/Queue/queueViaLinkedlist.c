@@ -9,7 +9,7 @@ struct Node {
 struct Queue {
     Node *front, *rear;
 };
-
+// 
 struct Node* newNode(int data) {
     struct Node* node = (struct Node*)malloc(sizeof(struct Node));
     node->data = data;
