@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//here "struct Node" is return type. like return type int
-struct Node *createLinkedList(int arr[], int size);
+//here "struct Node*" is return type. like return type int*
+struct Node* createLinkedList(int arr[], int size);
 
 struct Node{
 	int data;
@@ -24,9 +24,9 @@ int main(){
 	return 0;
 }
 
-struct Node *createLinkedList(int arr[], int size){
+struct Node* createLinkedList(int arr[], int size){
 	//here *head, *temp, *current all are Node type variable
-	struct Node *head = NULL, *temp = NULL, *current = NULL;
+	struct Node* head = NULL, *temp = NULL, *current = NULL;
 	for(int i = 0; i<size; i++){
 		temp = (struct Node*)malloc(sizeof(struct Node));
 		temp -> data = arr[i];

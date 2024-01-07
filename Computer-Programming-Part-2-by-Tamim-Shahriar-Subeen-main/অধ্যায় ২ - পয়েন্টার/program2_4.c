@@ -3,10 +3,10 @@
 int main()
 {
   int x = 10;
-  int *p;
+  int *p = &x;
   printf("Address of x: %p %d\n", &x, &x);
 
-  p = &x;
+  // p = &x;
 
   printf("Value of x: %d\n", x);
 

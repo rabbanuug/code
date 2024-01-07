@@ -1,16 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//written via gpt
-
-//createStack() - creates a new stack
-//push() - adds a new element to the stack
-//pop() - removes and returns the top element of the stack
-//peek() - returns the top element of the stack without removing it
-//isEmpty() - returns 1 if the stack is empty, else 0
-//isFull() - returns 1 if the stack is full, else 0
-//deleteStack() - deletes the entire stack
-
 typedef struct Node{
     int data;
     Node* next;
@@ -19,6 +9,13 @@ typedef struct Node{
 typedef struct Stack {
     Node* top;
 } Stack;
+
+int isEmpty(Stack* stack) {
+    return stack->top == NULL;
+}
+int peek(Stack* stack) {
+    return stack->top->data;
+}
 
 Stack* createStack() {
     Stack* stack = (Stack*)malloc(sizeof(Stack));
@@ -40,10 +37,6 @@ void push(Stack* stack, int data) {
 }
 
 int pop(Stack* stack) {
-    // if (stack->top == NULL) {
-    //     printf("Stack Underflow\n");
-    //     return -1;
-    // }
     // Assigning the top of the stack to a temporary variable
     Node* temp = stack->top;
     int data = temp->data;
@@ -52,17 +45,6 @@ int pop(Stack* stack) {
     return data;
 }
 
-int peek(Stack* stack) {
-    // if (stack->top == NULL) {
-    //     printf("Stack is empty\n");
-    //     return -1;
-    // }
-    return stack->top->data;
-}
-
-int isEmpty(Stack* stack) {
-    return stack->top == NULL;
-}
 
 int main() {
     Stack *stack = createStack();

@@ -12,7 +12,7 @@ typedef struct{
 void initStack(Stack *stack){
     stack->top = -1;
 }
-
+// 
 int isEmpty(Stack *stack){
     return stack->top == -1;
 }
@@ -21,7 +21,7 @@ void push(Stack *stack, int value){
     stack->items[++stack->top] = value;
 }
 
-int pop(Stack *stack){
+int pop(Stack* stack){
     return stack->items[stack->top--];
 }
 

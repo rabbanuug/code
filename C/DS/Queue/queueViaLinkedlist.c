@@ -25,7 +25,7 @@ struct Queue* createQueue() {
 
 void enqueue(struct Queue* queue, int data) {
     struct Node* node = newNode(data);
-    if (queue->rear == NULL) {
+    if (queue->front == NULL) {
         queue->front = queue->rear = node;
         return;
     }
@@ -52,7 +52,6 @@ int main() {
     struct Queue* queue = createQueue();
     enqueue(queue, 1);
     enqueue(queue, 12);
-    enqueue(queue, 14);
     printf("Front element : %d\n", front(queue));
     printf("Dequeue from queue : %d\n", dequeue(queue));
     printf("Dequeue from queue : %d\n", dequeue(queue));

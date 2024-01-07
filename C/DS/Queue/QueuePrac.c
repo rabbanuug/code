@@ -55,7 +55,6 @@ int main(){
 
     enqueue(&queue, 1);
     enqueue(&queue, 12);
-    enqueue(&queue, 14);
 
     printf("Front element : %d\n", front(&queue));
     printf("Dequeue from queue : %d\n", dequeue(&queue));
