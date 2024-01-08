@@ -2,6 +2,12 @@
 
 #include <stdio.h>
 
+/**
+ * @brief Swaps the values of two integers.
+ * 
+ * @param a Pointer to the first integer.
+ * @param b Pointer to the second integer.
+ */
 void swap(int *a, int *b) {
     int temp = *a;
     *a = *b;
