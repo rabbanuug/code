@@ -68,3 +68,5 @@ dkms.conf
 *.lai
 outputf.in
 jspwTest.cpp
+inputf.in
+outputf.in
