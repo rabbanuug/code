@@ -49,7 +49,7 @@ void merge(int *arr, int s, int e){
 
 void mergeSort(int *arr, int s, int e){
     //base case
-    if(s <= e) return;
+    if(s >= e) return;
 
     int mid = (s+e)/2;
 

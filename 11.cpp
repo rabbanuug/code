@@ -8,8 +8,8 @@ using namespace std;
 
 int main()
 {
-    // optimize();
-    
+    optimize();
+    cout << 10/11;
 
 
     return 0;
