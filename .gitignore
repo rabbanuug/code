@@ -70,3 +70,4 @@ outputf.in
 jspwTest.cpp
 inputf.in
 outputf.in
+*.class
